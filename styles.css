@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    
+    /** FONTS **/
+
+    --main-font: Figtree;
+    --default-size: 16px; 
+    --default-weight: 500;
+    --bold-weight: 800;
+
+
+    /** COLORS **/
+
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+}
+
+
+
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: var(--main-font);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/** BLOG CARD STYLES **/
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25rem;
+    background-color: var(--white);
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+
+    border: 1px solid var(--gray950);
+    box-shadow: 0.5rem 0.5rem;
+
+    justify-content: center;
+    align-items: self-start;
+}
+
+.blog-card .article-preview { 
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.blog-card .tag-box {
+
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    font-weight: var(--bold-weight);
+    background-color: var(--yellow);
+    
+
+}
+
+.blog-card .publish-date {
+    font-size: 1rem;
+}
+
+.blog-card .article-title {
+    font-weight: var(--bold-weight);
+}
+
+.blog-card a:link,
+.blog-card a:visited {
+    color: var(--gray950);
+    text-decoration: none;
+}
+
+.blog-card a:hover,
+.blog-card a:active {
+    color: var(--yellow);
+    transition: 0.1s;
+}
+
+.blog-card .article-description {
+    color: var(--gray500);
+}
+
+
+.publisher-profile {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.publisher-profile img {
+    height: 2.5rem;
+}
+
+.publisher-profile p {
+    font-weight: var(--bold-weight);
+    align-content: center;
+}
+
